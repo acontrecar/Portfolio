@@ -1,0 +1,16 @@
+<nav class="navbar">
+  <h1>Antonio Contreras</h1>
+
+  <div class="menu-toggle" id="menu-toggle" (click)="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+
+
+  <div class="navbar-menu" id="navbarMenu" [ngClass]="{'open': isMenuOpen}">
+    <a *ngFor="let item of menuItems" [href]="item.href" class="navbar-menu-item">{{item.title}}</a>
+  </div>
+
+</nav>

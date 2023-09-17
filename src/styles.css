@@ -1,23 +1,11 @@
-$primary-100: #2e8b57;
-$primary-200: #61bc84;
-$primary-300: #c6ffe6;
-$accent-100: #8fbc8f;
-$accent-200: #345e37;
-$text-100: #ffffff;
-$text-200: #e0e0e0;
-$bg-100: #1e1e1e;
-$bg-200: #2d2d2d;
-$bg-300: #454545;
-
 @font-face {
   font-family: "Poppins-Bold";
   src: url("fonts/Poppins/Poppins-Bold.ttf") format("truetype");
 }
-
 body {
   font-family: "Poppins-Bold";
-  background-color: $bg-100;
-  color: $text-100;
+  background-color: #1e1e1e;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,4 +16,4 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 0 5%;
-}
+}/*# sourceMappingURL=styles.css.map */
