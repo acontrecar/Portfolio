@@ -5,7 +5,7 @@
   <!-- <div>
     <img *ngFor="let svg of svgs" [src]="'assets/icons/' + svg.name" alt="">
   </div> -->
-  <div class="contents">
+  <!-- <div class="contents">
     <div class="content" *ngFor="let svg of svgs">
       <span>{{svg.folderName}}</span>
 
@@ -13,6 +13,12 @@
         <img class="imagenes" *ngFor="let icon of svg.names" [src]="'assets/icons/' + svg.folderName + '/' + icon"
           alt="">
       </div>
+    </div>
+  </div> -->
+
+  <div class="contents">
+    <div class="content-imgs">
+      <img *ngFor="let item of svgFinal" class="imagenes" [src]="item" alt="">
     </div>
   </div>
 </section>

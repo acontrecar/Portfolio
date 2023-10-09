@@ -11,29 +11,8 @@ interface FolderWithNames {
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
 })
-export class SkillsComponent {
-  // public svgs: FolderWithNames = [
-  //   { name: 'javascript-svgrepo-com.svg' },
-  //   { name: 'java-svgrepo-com.svg' },
-  //   { name: 'laravel-svgrepo-com.svg' },
-  //   { name: 'nestjs-svgrepo-com.svg' },
-  //   { name: 'nodejs-svgrepo-com.svg' },
-  //   { name: 'php-svgrepo-com.svg' },
-  //   { name: 'spring-boot-svgrepo-com.svg' },
-  //   { name: 'mongodb-svgrepo-com.svg' },
-  //   { name: 'mysql-logo-svgrepo-com.svg' },
-  //   { name: 'oracle-svgrepo-com.svg' },
-  //   { name: 'phpmyadmin-svgrepo-com.svg' },
-  //   { name: 'sql-database-generic-svgrepo-com.svg' },
-  //   { name: 'angular-svgrepo-com.svg' },
-  //   { name: 'bootstrap-fill-svgrepo-com.svg' },
-  //   { name: 'css-3-svgrepo-com.svg' },
-  //   { name: 'html-5-svgrepo-com.svg' },
-  //   { name: 'scss-svgrepo-com.svg' },
-  //   { name: 'tailwind-svgrepo-com.svg' },
-  //   { name: 'vue-svgrepo-com.svg' },
-  // ];
-
+export class SkillsComponent implements OnInit {
+  public svgFinal: string[] = [];
   public svgs: FolderWithNames[] = [
     {
       folderName: 'backend',
@@ -69,4 +48,15 @@ export class SkillsComponent {
       ],
     },
   ];
+
+  ngOnInit(): void {
+    this.svgs.forEach((folder) => {
+      folder.names.forEach((name) => {
+        // console.log(name);
+        this.svgFinal.push(`assets/icons/${folder.folderName}/${name}`);
+      });
+    });
+
+    // console.log(this.svgFinal);
+  }
 }

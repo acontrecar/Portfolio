@@ -1,25 +1,42 @@
 @import "../../../styles.scss";
 
 .contents {
+  padding: 2% 5% 0 5%;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center; // Centra los elementos internos horizontalmente
-
-  .content {
-    display: flex;
-    align-items: flex-start; // Alinea los elementos span a la izquierda
-    span {
-      font-size: 1.1rem;
-      text-transform: uppercase;
+  justify-content: center;
+  .content-imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 4px;
+    .imagenes {
+      width: 70px;
+      height: 70px;
       margin: 0 0.5rem 0 0.5rem;
-    }
-    .content-imgs {
-      .imagenes {
-        width: 40px;
-        height: 40px;
-        margin: 0 0.5rem 0 0.5rem;
-      }
     }
   }
 }
+
+// .contents {
+//   display: flex;
+//   align-items: center;
+//   flex-direction: column;
+//   justify-content: center; // Centra los elementos internos horizontalmente
+
+//   .content {
+//     display: flex;
+//     align-items: flex-start; // Alinea los elementos span a la izquierda
+//     span {
+//       font-size: 1.1rem;
+//       text-transform: uppercase;
+//       margin: 0 0.5rem 0 0.5rem;
+//     }
+//     .content-imgs {
+//       .imagenes {
+//         width: 40px;
+//         height: 40px;
+//         margin: 0 0.5rem 0 0.5rem;
+//       }
+//     }
+//   }
+// }

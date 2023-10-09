@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
     { title: 'Sobre mi', href: '#sobreMi' },
     { title: 'Habilidades', href: '#habilidades' },
     { title: 'Projectos', href: '#proyectos' },
-    { title: 'Contacto', href: '#contactame' },
+    // { title: 'Contacto', href: '#contactame' },
   ];
 
   ngOnInit(): void {
