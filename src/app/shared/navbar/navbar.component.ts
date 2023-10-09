@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 interface MenuItem {
   title: string;
@@ -10,13 +10,21 @@ interface MenuItem {
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   public menuItems: MenuItem[] = [
     { title: 'Sobre mi', href: '#sobreMi' },
     { title: 'Habilidades', href: '#habilidades' },
     { title: 'Projectos', href: '#proyectos' },
     { title: 'Contacto', href: '#contactame' },
   ];
+
+  ngOnInit(): void {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        this.isMenuOpen = false;
+      }
+    });
+  }
 
   public isMenuOpen = false;
 

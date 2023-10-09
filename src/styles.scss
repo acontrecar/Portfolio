@@ -14,6 +14,16 @@ $bg-300: #454545;
   src: url("fonts/Poppins/Poppins-Bold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
 body {
   font-family: "Poppins-Bold";
   background-color: $bg-100;
@@ -28,4 +38,13 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 0 5%;
+}
+
+.titleSection {
+  margin-top: 20vh;
+  color: $primary-100;
+}
+
+html {
+  scroll-behavior: smooth;
 }
