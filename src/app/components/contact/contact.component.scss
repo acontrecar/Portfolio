@@ -8,9 +8,9 @@
 
   .contact-info {
     /* display: none; */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    text-align: start; /* Alinear el texto a la izquierda */
+    justify-content: center;
+    align-items: center;
+    text-align: start;
     max-width: 85vh;
     margin: auto;
     flex-direction: column;
@@ -58,5 +58,9 @@
       align-items: center;
       justify-content: center;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: auto;
   }
 }

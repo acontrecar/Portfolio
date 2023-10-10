@@ -42,5 +42,9 @@
         }
       }
     }
+
+    @media screen and (width<=350px) {
+      font-size: 95%;
+    }
   }
 }
