@@ -45,6 +45,7 @@ export class SkillsComponent implements OnInit {
         'scss-svgrepo-com.svg',
         'tailwind-svgrepo-com.svg',
         'vue-svgrepo-com.svg',
+        'github-svgrepo-com.svg',
       ],
     },
   ];
