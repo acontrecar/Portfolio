@@ -9,6 +9,21 @@
 
   .social-media {
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .group {
+      margin-top: 1%;
+      .img {
+        // position: absolute;
+        animation: moveArrow 3s linear infinite;
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        border-radius: 10px;
+        margin-right: 5px;
+      }
+    }
 
     .social-link {
       color: #fff;
@@ -23,9 +38,24 @@
         width: 30px;
         height: 30px;
         border: 1px solid $primary-300;
+        background-color: $primary-300;
         padding: 5px;
         border-radius: 10px;
       }
     }
+  }
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(
+      0
+    ); /* Ajusta el valor para que la flecha se mueva completamente hacia la izquierda */
   }
 }
