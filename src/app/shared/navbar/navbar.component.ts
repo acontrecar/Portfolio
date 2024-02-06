@@ -12,7 +12,7 @@ interface MenuItem {
 })
 export class NavbarComponent implements OnInit {
   public menuItems: MenuItem[] = [
-    { title: 'Sobre mi', href: '#sobreMi' },
+    { title: 'Sobre mí', href: '#sobreMi' },
     { title: 'Habilidades', href: '#habilidades' },
     { title: 'Projectos', href: '#proyectos' },
     // { title: 'Contacto', href: '#contactame' },

@@ -23,6 +23,7 @@ export class SkillsComponent implements OnInit {
         'nodejs-svgrepo-com.svg',
         'php-svgrepo-com.svg',
         'spring-boot-svgrepo-com.svg',
+        'python-svgrepo-com.svg',
       ],
     },
     {
