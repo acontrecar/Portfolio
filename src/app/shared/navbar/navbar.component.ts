@@ -14,7 +14,7 @@ export class NavbarComponent implements OnInit {
   public menuItems: MenuItem[] = [
     { title: 'Sobre mí', href: '#sobreMi' },
     { title: 'Habilidades', href: '#habilidades' },
-    { title: 'Projectos', href: '#proyectos' },
+    { title: 'Proyectos', href: '#proyectos' },
     // { title: 'Contacto', href: '#contactame' },
   ];
 
